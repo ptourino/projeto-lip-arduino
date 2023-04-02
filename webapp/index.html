@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guia de aprendizagem para Arduino</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+  </head>
+
+  <body>
+    <div class="w-100 h-100 text-white">
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-4 px-3">
+        <div class="container-fluid">
+          <!-- Logo -->
+          <a class="navbar-brand fs-1 m-0 p-0" href="#">
+            <i class="bi bi-motherboard-fill d-inline-block me-4 text-primary"
+              ><span class="fw-bolder text-orange">G4A</span></i
+            >
+          </a>
+
+          <!-- Hamburger Button -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Navbar Items -->
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Lorem</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Loremipsum</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Loremipsumdolor</a>
+              </li>
+            </ul>
+
+            <!-- Search Box -->
+            <form class="d-flex" role="search">
+              <input
+                class="form-control rounded-0 rounded-start"
+                type="search"
+                placeholder="Pesquisar"
+                aria-label="Search"
+              />
+              <button
+                class="btn btn-warning rounded-0 rounded-end text-dark py-0"
+                type="submit"
+              >
+                <i class="bi bi-search fs-5"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <div class="container-fluid bg-dark d-flex pe-0">
+        <!-- Sidebar -->
+        <aside class="col-lg-2 col-md-3 col-12 pe-3 sidebar">
+          <!-- overflow-y-hidden -->
+          <div id="list-example" class="list-group pt-2">
+            <h6 class="mb-4 ps-3 text-uppercase text-orange">Passos</h6>
+            <ol class="fw-light">
+              <li>
+                <a
+                  class="list-group-item list-group-item-action"
+                  href="#list-item-1"
+                >
+                  Aula 1: O que são os Microcontroladores?
+                </a>
+              </li>
+              <li>
+                <a
+                  class="list-group-item list-group-item-action"
+                  href="#list-item-2"
+                >
+                  Aula 2: O que são Sensores e Dispositivos de Entrada?
+                </a>
+              </li>
+              <li>
+                <a
+                  class="list-group-item list-group-item-action"
+                  href="#list-item-3"
+                >
+                  Aula 3: O que são dispositivos de Saídas ou Atuadores?
+                </a>
+              </li>
+              <li>
+                <a
+                  class="list-group-item list-group-item-action"
+                  href="#list-item-4"
+                >
+                  Aula 4: O que é o Arduíno? É um Microcontrolador? Uma placa?
+                </a>
+              </li>
+              <li>
+                <a
+                  class="list-group-item list-group-item-action"
+                  href="#list-item-5"
+                >
+                  Aula 5: Conheça o Arduíno UNO
+                </a>
+              </li>
+              <li>
+                <a
+                  class="list-group-item list-group-item-action"
+                  href="#list-item-6"
+                >
+                  Aula 6: Conheça o Circuito dentro do Arduíno UNO
+                </a>
+              </li>
+              <li>
+                <a
+                  class="list-group-item list-group-item-action"
+                  href="#list-item-7"
+                >
+                  Aula 7: Instalando e testando o Software do Arduíno
+                </a>
+              </li>
+              <li>
+                <a
+                  class="list-group-item list-group-item-action"
+                  href="#list-item-8"
+                >
+                  Aula 8: Instalando o Driver do Arduíno Clone
+                </a>
+              </li>
+              <li>
+                <a
+                  class="list-group-item list-group-item-action"
+                  href="#list-item-9"
+                >
+                  Aula 9: SIMULADOR DE ARDUÍNO GRÁTIS E ONLINE - Tinkercad
+                </a>
+              </li>
+              <li>
+                <a
+                  class="list-group-item list-group-item-action"
+                  href="#list-item-10"
+                >
+                  Aula 10: Simulador de Arduino e PIC Gratuito para PC -
+                  SimulIDE
+                </a>
+              </li>
+            </ol>
+          </div>
+        </aside>
+
+        <!-- Page Content -->
+        <main class="col-lg-10 col-md-9 col-12 pt-1 pe-4 ps-5 page-content">
+          <!-- overflow-y-scroll -->
+          <div
+            data-bs-spy="scroll"
+            data-bs-target="#list-example"
+            data-bs-smooth-scroll="true"
+            class="scrollspy-example"
+            tabindex="0"
+          >
+            <h3 class="mb-5 text-uppercase text-orange">
+              Guia de aprendizagem para Arduino
+            </h3>
+            <h4>BOT Para nivelamento de conhecimento</h4>
+            <p class="fs-6 fw-light pb-5">
+              <iframe
+                src="https://scratch.mit.edu/projects/823799887/embed"
+                allowtransparency="true"
+                width="485"
+                height="402"
+                frameborder="0"
+                scrolling="no"
+                allowfullscreen
+              ></iframe>
+            </p>
+            <ol class="ps-4">
+              <li class="fs-4 fw-bold ps-4">
+                <h4 id="list-item-1">
+                  Aula 1: O que são os Microcontroladores?
+                </h4>
+                <p class="fs-6 fw-light pb-5">
+                  <iframe
+                    width="100%"
+                    height="600"
+                    src="https://www.youtube.com/embed/WzfQ8Do8n8Y"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                  ></iframe>
+                </p>
+              </li>
+              <li class="fs-4 fw-bold ps-4">
+                <h4 id="list-item-2">
+                  Aula 2: O que são Sensores e Dispositivos de Entrada?
+                </h4>
+                <p class="fs-6 fw-light pb-5">
+                  <iframe
+                    width="100%"
+                    height="600"
+                    src="https://www.youtube.com/embed/E3DaPEiZpNY"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                  ></iframe>
+                </p>
+              </li>
+              <li class="fs-4 fw-bold ps-4">
+                <h4 id="list-item-3">
+                  Aula 3: O que são dispositivos de Saídas ou Atuadores?
+                </h4>
+                <p class="fs-6 fw-light pb-5">
+                  <iframe
+                    width="100%"
+                    height="600"
+                    src="https://www.youtube.com/embed/aFzAKzFLy68"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                  ></iframe>
+                </p>
+              </li>
+              <li class="fs-4 fw-bold ps-4">
+                <h4 id="list-item-4">
+                  Aula 4: O que é o Arduíno? É um Microcontrolador? Uma placa?
+                </h4>
+                <p class="fs-6 fw-light pb-5">
+                  <iframe
+                    width="100%"
+                    height="600"
+                    src="https://www.youtube.com/embed/wWqXWIBzr6o"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                  ></iframe>
+                </p>
+              </li>
+              <li class="fs-4 fw-bold ps-4">
+                <h4 id="list-item-5">Aula 5: Conheça o Arduíno UNO</h4>
+                <p class="fs-6 fw-light pb-5">
+                  <iframe
+                    width="100%"
+                    height="600"
+                    src="https://www.youtube.com/embed/_obv0f-3ECQ"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                  ></iframe>
+                </p>
+              </li>
+              <li class="fs-4 fw-bold ps-4">
+                <h4 id="list-item-6">
+                  Aula 6: Conheça o Circuito dentro do Arduíno UNO
+                </h4>
+                <p class="fs-6 fw-light pb-5">
+                  <iframe
+                    width="100%"
+                    height="600"
+                    src="https://www.youtube.com/embed/NGzuYK9g0iE"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                  ></iframe>
+                </p>
+              </li>
+              <li class="fs-4 fw-bold ps-4">
+                <h4 id="list-item-7">
+                  Aula 7: Instalando e testando o Software do Arduíno
+                </h4>
+                <p class="fs-6 fw-light pb-5">
+                  <iframe
+                    width="100%"
+                    height="600"
+                    src="https://www.youtube.com/embed/Fq7IspDk0YM"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                  ></iframe>
+                </p>
+              </li>
+              <li class="fs-4 fw-bold ps-4">
+                <h4 id="list-item-8">
+                  Aula 8: Instalando o Driver do Arduíno Clone
+                </h4>
+                <p class="fs-6 fw-light pb-5">
+                  <iframe
+                    width="100%"
+                    height="600"
+                    src="https://www.youtube.com/embed/wvCOzbE6tME"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                  ></iframe>
+                </p>
+              </li>
+              <li class="fs-4 fw-bold ps-4">
+                <h4 id="list-item-9">
+                  Aula 9: SIMULADOR DE ARDUÍNO GRÁTIS E ONLINE - Tinkercad
+                </h4>
+                <p class="fs-6 fw-light pb-5">
+                  <iframe
+                    width="100%"
+                    height="600"
+                    src="https://www.youtube.com/embed/j7ePCEKYKyQ"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                  ></iframe>
+                </p>
+              </li>
+              <li class="fs-4 fw-bold ps-4">
+                <h4 id="list-item-10">
+                  Aula 10: Simulador de Arduino e PIC Gratuito para PC -
+                  SimulIDE
+                </h4>
+                <p class="fs-6 fw-light pb-5">
+                  <iframe
+                    width="100%"
+                    height="600"
+                    src="https://www.youtube.com/embed/p85AR29TG_I"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                  ></iframe>
+                </p>
+              </li>
+            </ol>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
